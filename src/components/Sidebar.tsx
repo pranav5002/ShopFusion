@@ -19,7 +19,6 @@ const Sidebar = () => {
     setMinPrice,
     maxPrice,
     setMaxPrice,
-    keyword,
     setKeyword,
   } = useFilter();
   const [categories, setCategories] = useState<string[]>([]);
@@ -81,7 +80,7 @@ const Sidebar = () => {
 
       <section>
         <input
-          className="border-2 border-gray-200 rounded px-2 sm:mb-0 "
+          className="border-2 rounded px-2 sm:mb-0 "
           placeholder="Search Product"
           type="text"
           value={searchQuery}
@@ -91,14 +90,14 @@ const Sidebar = () => {
         <div className="flex justify-center items-center">
           <input
             type="text"
-            className="border-2 border-gray-200 mr-2 px-5 py-3 mb-3 w-full "
+            className="border-2 rounded mr-2 px-5 py-3 mb-3 w-full mt-2 "
             placeholder="Min"
             value={minPrice ?? ""}
             onChange={handleMinPriceChnage}
           />
           <input
             type="text"
-            className="border-2 border-gray-200 mr-2 px-5 py-3 mb-3 w-full "
+            className="border-2 rounded mr-2 px-5 py-3 mb-3 w-full mt-2 "
             placeholder="Max"
             value={maxPrice ?? ""}
             onChange={handleMaxPriceChnage}
@@ -113,7 +112,7 @@ const Sidebar = () => {
 
         <section>
           {categories.map((category, index) => (
-            <label key={index} className="block border-gray-200 mb-2">
+            <label key={index} className="block  font-medium mb-2">
               <input
                 type="radio"
                 name="category"
@@ -137,7 +136,7 @@ const Sidebar = () => {
               <button
                 key={index}
                 onClick={() => handleKeywordClick(Keyword)}
-                className="block mb-2 px-4 py-2 w-full text-left border border-gray-200 rounded hover:bg-gray-200"
+                className="block mb-2 px-4 py-2 w-full text-left border border-gray-200 rounded hover:bg-gray-200 font-medium"
               >
                 {Keyword.toUpperCase()}
               </button>
@@ -147,7 +146,7 @@ const Sidebar = () => {
 
         <button
           onClick={handleResetFilters}
-          className="w-full mb-[4rem]  py-2 bg-black text-white rounded mt-5"
+          className="w-full mb-[4rem]1 py-2 bg-black text-white rounded mt-5"
         >
           Reset Filters
         </button>
