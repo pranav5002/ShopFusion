@@ -1,5 +1,4 @@
 import { MessageCircle, ThumbsUp } from 'lucide-react'
-import React from 'react'
 
 const blogs = [
   {
@@ -27,7 +26,7 @@ const blogs = [
 ]
 const PopularBlogs = () => {
   return (
-    <div className='bg-white p-5 w-[23rem] mt-4 border ml-5 rounded'>
+    <div className='bg-white p-5 w-92 mt-4 border ml-5 rounded'>
       <div className='text-xl font-bold mb-5'>Popular Blogs</div>
       <ul>
         {blogs.map((blog, index) => (

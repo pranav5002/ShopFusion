@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useFilter } from "./FilterContext";
 import { Tally3, Loader2 } from "lucide-react";
 import axios from "axios";

@@ -118,7 +118,7 @@ const Sidebar = () => {
                 name="category"
                 value={category}
                 onChange={() => handleRadioChangeCategories(category)}
-                className="mr-2 w-[16px] h-[16px]"
+                className="mr-2 w-4 h-4"
                 checked={selectedCategory === category}
               />
 
@@ -146,7 +146,7 @@ const Sidebar = () => {
 
         <button
           onClick={handleResetFilters}
-          className="w-full mb-[4rem]1 py-2 bg-black text-white rounded mt-5"
+          className="w-full mb-[4rem]1 py-2 bg-black text-white rounded mt-5 font-medium"
         >
           Reset Filters
         </button>
